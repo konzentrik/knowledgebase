@@ -1,0 +1,22 @@
+{
+  "name": "PROJECTNAME",
+  "version": "0.0.1",
+  "private": true,
+  "repository": "https://gitlab.com/your/project.git",
+  "release": {
+    "branches": ["main"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/gitlab",
+      "@semantic-release/changelog"
+    ],
+    "tagFormat": "release/${version}"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@semantic-release/changelog": "semantic-release/changelog",
+    "@semantic-release/gitlab": "semantic-release/gitlab"
+  }
+}
